@@ -1,0 +1,26 @@
+{
+  "name": "curso-full-stack-typescript-dio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gefferson-Souza/Curso-FULL-STACK-TYPESCRIPT-DIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gefferson-Souza/Curso-FULL-STACK-TYPESCRIPT-DIO/issues"
+  },
+  "homepage": "https://github.com/Gefferson-Souza/Curso-FULL-STACK-TYPESCRIPT-DIO#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
