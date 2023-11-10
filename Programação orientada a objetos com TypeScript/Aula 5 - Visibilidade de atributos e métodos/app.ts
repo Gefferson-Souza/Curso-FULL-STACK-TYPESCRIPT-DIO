@@ -23,5 +23,5 @@ contaPJ.emprestimo();
 contaPJ.depositar(123); */
 
 
-console.log('O jose lucca está aprendendo à somar 3+3 =',3+3)
+
 
