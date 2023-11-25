@@ -5,11 +5,11 @@ import {
 
 import { useContext } from 'react'
 
-import { AppContext } from '../../App'
+import { AppContext } from './AppContext'
 
 export const Header = () => {
   const context = useContext(AppContext);
-  console.log('HEADER',context.user = 'babac')
+  
   return (
     <Box backgroundColor='orange' >
       <Heading marginLeft='30px' color='white' >Dio Bank</Heading>

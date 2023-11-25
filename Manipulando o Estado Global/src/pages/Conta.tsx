@@ -5,15 +5,20 @@ import { IConta, api } from "../api";
 import { useContext, useEffect, useState } from "react";
 
 import { Params, useParams, useNavigate } from "react-router-dom";
-import { AppContext } from "../App";
+import { AppContext } from "../components/AppContext";
 
 const Conta = () => {
-    const context = useContext(AppContext);
-    console.log('PAGES CONT',context)
+    const { user, isLoggedIn } = useContext(AppContext);
+    const navigate = useNavigate();
+
+    if (!(isLoggedIn)) {
+        navigate('/')
+    }
 
     const [userData, setUserData] = useState<IConta | undefined>();
 
     const { id }: Params<string> = useParams();
+    console.log('id', id)
 
     useEffect(() => {
         const getData = async (): Promise<void> => {
@@ -27,7 +32,7 @@ const Conta = () => {
 
     const currentDate = new Date().toLocaleDateString('pt-BR', { hour: 'numeric', minute: 'numeric' })
 
-    const navigate = useNavigate();
+
 
     if ((!userData || !id) || (id !== userData.id)) {
         navigate('/')
